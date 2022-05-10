@@ -3,9 +3,11 @@
 <head>
 <meta name = "color-scheme" content="dark">
 <script>
+
 </script>
 </head>
 <style>
+/* Style for the calcculator div */
 #calculator{
   position: absolute; 
   width: 20vw; 
@@ -16,10 +18,12 @@
   height: 50vh; 
   display: flex; 
   flex-wrap: wrap}
+/* Style for the output window */
 #userinput{
   width: 20vw; 
   height: 10vh; 
   text-align: right}
+/* Style for the buttons */
 #buttons{
   display: grid; 
   grid-template-columns: auto auto auto auto; 
@@ -30,6 +34,7 @@
   padding: 10px}
 </style>
 <body>
+<!-- One div containing all the elements of the calculator -->
 <div id = calculator>
   <!-- Output window for showing the users input -->
   <input id = "userinput" type = "text">
