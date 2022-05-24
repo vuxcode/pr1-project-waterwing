@@ -2,9 +2,6 @@
 <html lang = "en">
 <head>
 <meta name = "color-scheme" content="dark">
-<script>
-
-</script>
 </head>
 <style>
 /* Style for the calcculator div */
@@ -37,7 +34,7 @@
 <!-- One div containing all the elements of the calculator -->
 <div id = calculator>
   <!-- Output window for showing the users input -->
-  <input id = "userinput" type = "text">
+  <input id = "userInput" type = "text">
   <!-- Buttons for the numbers, operands and other functions -->
   <div id = "buttons">
     <button id = "btn7">7</button>
@@ -62,4 +59,8 @@
     <button id = "btn=">=</button>
   </div>
 </div>  
+<script>
+// Variable for the output window
+var outputWindow = document.getElementById("userInput");
+</script>
 </body>
