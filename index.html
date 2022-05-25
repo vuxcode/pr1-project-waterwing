@@ -38,33 +38,35 @@
 <!-- One div containing all the elements of the calculator -->
 <div id = calculator>
   <!-- Output window for showing the users input -->
-  <textarea id = "userInput">0</textarea>
+  <textarea id = "userInput"></textarea>
   <!-- Buttons for the numbers, operands and other functions -->
   <div id = "buttons">
     <button id = "numberButton">7</button>
-      <button id = "numberButton">8</button>
-      <button id = "numberButton">9</button>
-      <button id = "numberButton">/</button>
-      
-      <button id = "numberButton">4</button>
-      <button id = "numberButton">5</button>
-      <button id = "numberButton">6</button>
-      <button id = "numberButton">*</button>
-      
-      <button id = "numberButton">1</button>
-      <button id = "numberButton">2</button>
-      <button id = "numberButton">3</button>
-      <button id = "numberButton">-</button>
+    <button id = "numberButton">8</button>
+    <button id = "numberButton">9</button>
+    <button id = "numberButton">/</button>
+    
+    <button id = "numberButton">4</button>
+    <button id = "numberButton">5</button>
+    <button id = "numberButton">6</button>
+    <button id = "numberButton">*</button>
+    
+    <button id = "numberButton">1</button>
+    <button id = "numberButton">2</button>
+    <button id = "numberButton">3</button>
+    <button id = "numberButton">-</button>
 
-      <!-- Three buttons have individual ids since they are used in separate functions -->
-      <button id = "clearButton">C</button>
-      <button id = "numberButton">0</button>
-      <button id = "numberButton">.</button>
-      <button id = "numberButton">+</button>
-      <button id = "equalsButton">=</button>
-      <button id = "clearHistoryButton">Cl. hist.</button>
+    <!-- Three buttons have individual ids since they are used in separate functions -->
+    <button id = "clearButton">C</button>
+    <button id = "numberButton">0</button>
+    <button id = "numberButton">.</button>
+    <button id = "numberButton">+</button>
+    <button id = "equalsButton">=</button>
+    <button id = "clearHistoryButton">Cl. hist.</button>
   </div>
 </div>  
+<!-- Textarea showing previous calculations -->
+<textarea id = history></textarea>
 <script>
 // Variable for the output window
 var outputWindow = document.getElementById("userInput");
