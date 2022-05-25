@@ -88,7 +88,26 @@ allButtons.forEach(button => {
         outputwindow.innerHTML += button.innerHTML
     })
 })
-
+// Function for the calculation
+function compute() {
+    // Check to see if button is working
+    console.log("Equals button clicked.");
+    // If equals button is clicked with no given input, it should give 0 as a result
+    if (outputwindow.innerHTML == "") {
+        // Give 0 as result in output window
+        outputwindow.innerHTML = "0";
+        // Give 0 as result in history window
+        recent.innerHTML = "0";
+    }
+    // Otherwise perform calculation 
+    else{
+        // Eval function evaluates the string
+        // First update the history window, showing the current calculation first and then the answer
+        recent.innerHTML += outputwindow.innerHTML + "=" + eval(outputwindow.innerHTML) + "\n";
+        // Then update the output winddow with the result
+        outputwindow.innerHTML = eval(outputwindow.innerHTML);
+    }
+}
 
 // Function for clearing output window
 function clearWindow() {
