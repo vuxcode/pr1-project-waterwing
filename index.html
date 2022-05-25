@@ -119,7 +119,7 @@ allButtons.forEach(button => {
   // Added event listener to all buttons to register clicks
   button.addEventListener("click", () => {
     // If a button is clicked it will update output window with the innerHTML of the button
-    outputwindow.innerHTML += button.innerHTML
+    outputWindow.innerHTML += button.innerHTML
   })
 })
 // Function for the calculation
@@ -127,9 +127,9 @@ function compute() {
   // Check to see if button is working
   console.log("Equals button clicked.");
   // If equals button is clicked with no given input, it should give 0 as a result
-  if (outputwindow.innerHTML == "") {
+  if (outputWindow.innerHTML == "") {
     // Give 0 as result in output window
-    outputwindow.innerHTML = "0";
+    outputWindow.innerHTML = "0";
     // Give 0 as result in history window
     recent.innerHTML = "0";
   }
@@ -137,9 +137,9 @@ function compute() {
   else{
     // Eval function evaluates the string
     // First update the history window, showing the current calculation first and then the answer
-    recent.innerHTML += outputwindow.innerHTML + "=" + eval(outputwindow.innerHTML) + "\n";
+    recent.innerHTML += outputWindow.innerHTML + "=" + eval(outputWindow.innerHTML) + "\n";
     // Then update the output winddow with the result
-    outputwindow.innerHTML = eval(outputwindow.innerHTML);
+    outputWindow.innerHTML = eval(outputWindow.innerHTML);
   }
 }
 // Function to clear the output window
@@ -147,7 +147,7 @@ function clearWindow() {
   // Check to see if button is working
   console.log("Clear button pushed.");
   // Update output window to an empty string
-  outputwindow.innerHTML = "";
+  outputWindow.innerHTML = "";
 }
 // Function to clear the history window
 function clearHistory() {
