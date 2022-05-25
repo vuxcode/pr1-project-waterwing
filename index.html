@@ -78,9 +78,16 @@ var equals = document.getElementById("equalsButton");
 var recent = document.getElementById("history");
 // Variable for the "clear history" button
 var clearRecent = document.getElementById("clearHistoryButton");
-
 // Variable for clear button
 var clear = document.getElementById("clearButton");
+// forEach is used to be able to listen to and give a funtion to all buttons found in querySelectorAll 
+allButtons.forEach(button => {
+    // Added event listener to all buttons to register clicks
+    button.addEventListener("click", () => {
+        // If a button is clicked it will update output window with the innerHTML of the button
+        outputwindow.innerHTML += button.innerHTML
+    })
+})
 
 // "calculate" function connected to buttons
 function calculate(character) {
