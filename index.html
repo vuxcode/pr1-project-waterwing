@@ -108,11 +108,12 @@ function compute() {
         outputwindow.innerHTML = eval(outputwindow.innerHTML);
     }
 }
-
-// Function for clearing output window
+// Function to clear the output window
 function clearWindow() {
+    // Check to see if button is working
     console.log("Clear button pushed.");
-    outputWindow.innerText = "0";
+    // Update output window to an empty string
+    outputwindow.innerHTML = "";
 }
 clear.addEventListener("click", clearWindow);
 </script>
