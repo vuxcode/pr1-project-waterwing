@@ -21,6 +21,17 @@ button{
 button:hover{
     background-color: rgba(50,50,50,1);
 }
+/* Style for the buttons div */
+#buttons{
+    display: grid; 
+    grid-template-columns: 4.9vw 4.9vw 4.9vw 4.9vw; 
+    height: 39vh; 
+    width: 20vw; 
+    grid-row-gap: 1px; 
+    grid-column-gap: 1px; 
+    background-color: rgba(100,100,100,1);
+}
+
 /* Style for the calcculator div */
 #calculator{
   position: absolute; 
@@ -40,16 +51,7 @@ button:hover{
   text-align: right;
   resize: none;
 }
-/* Style for the buttons */
-#buttons{
-  display: grid; 
-  grid-template-columns: auto auto auto auto; 
-  height: 35vh; 
-  width: 20vw; 
-  grid-row-gap: 10px; 
-  grid-column-gap: 10px; 
-  padding: 10px
-  }
+
 </style>
 <body>
 <!-- One div containing all the elements of the calculator -->
