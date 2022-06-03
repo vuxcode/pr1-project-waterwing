@@ -122,10 +122,20 @@ allButtons.forEach(button => {
     outputWindow.innerHTML += button.innerHTML
   })
 })
+
 // Function for the calculation
 function compute() {
   // Check to see if button is working
   console.log("Equals button clicked.");
+  function afterZero() {
+            if (outputwindow.innerHTML.charAt(1) == operators) {
+                console.log("Det är sjukt fel.")
+            }
+  }
+console.log(operators)
+console.log(outputwindow.innerHTML.charAt(0))
+console.log(outputwindow.innerHTML.charAt(1))
+var operators = [1, 2];
   // If equals button is clicked with no given input, it should give 0 as a result
   if (outputWindow.innerHTML == "") {
     // Give 0 as result in output window
@@ -133,6 +143,10 @@ function compute() {
     // Give 0 as result in history window
     recent.innerHTML = "0";
   }
+  else if (outputwindow.innerHTML.charAt(0) == 0) {
+                afterZero();
+               
+            }
   // Otherwise perform calculation 
   else{
     // Eval function evaluates the string
