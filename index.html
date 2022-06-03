@@ -128,13 +128,13 @@ function compute() {
   // Check to see if button is working
   console.log("Equals button clicked.");
   function afterZero() {
-            if (outputwindow.innerHTML.charAt(1) == operators) {
+            if (outputWindow.innerHTML.charAt(1) == operators) {
                 console.log("Det är sjukt fel.")
             }
   }
 console.log(operators)
-console.log(outputwindow.innerHTML.charAt(0))
-console.log(outputwindow.innerHTML.charAt(1))
+console.log(outputWindow.innerHTML.charAt(0))
+console.log(outputWindow.innerHTML.charAt(1))
 var operators = [1, 2];
   // If equals button is clicked with no given input, it should give 0 as a result
   if (outputWindow.innerHTML == "") {
@@ -143,7 +143,7 @@ var operators = [1, 2];
     // Give 0 as result in history window
     recent.innerHTML = "0";
   }
-  else if (outputwindow.innerHTML.charAt(0) == 0) {
+  else if (outputWindow.innerHTML.charAt(0) == 0) {
                 afterZero();
                
             }
